@@ -1,0 +1,26 @@
+body {
+    padding: 20px 15%;
+    font-family: 'Nunito', sans-serif;
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    h2 {
+        border-top: solid 1px #ccc;
+    }
+}
+
+section#cases {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    div {
+        padding: 0 0.5rem;
+        border: solid 2px #ccc;
+        img {
+            width: 100%;
+        }
+    }
+}
