@@ -1,32 +1,41 @@
 body {
   padding: 10px 15%;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
+
 body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
 }
+
 body h2 {
   padding-top: 10px;
   border-top: solid 1px #ccc;
 }
+
 body a {
   color: #333;
 }
+
 body ul {
   padding-left: 1em;
 }
 
 section#cases {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   gap: 1rem;
 }
-section#cases div {
+
+section#cases article {
   padding: 0 0.5rem;
   border: solid 2px #ccc;
 }
-section#cases div img {
+
+section#cases article img {
   width: 100%;
 }
-
 /*# sourceMappingURL=styles.css.map */

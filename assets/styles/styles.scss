@@ -9,6 +9,7 @@ body {
     h2 {
         padding-top: 10px;
         border-top: solid 1px #ccc;
+        // grid-area: head;
     }
 
     a {
@@ -22,14 +23,17 @@ body {
 
 section#cases {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: auto;
     gap: 1rem;
 
-    div {
+    article {
         padding: 0 0.5rem;
         border: solid 2px #ccc;
         img {
             width: 100%;
         }
+        // grid-area: article;
     }
 }
